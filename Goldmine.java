@@ -51,8 +51,7 @@ public class Main {
         if(dp[sr][sc]!=-1)
         return dp[sr][sc];
         
-        if(sc==arr[0].length-1)
-        return arr[sr][sc];
+        
         
         int up = maxGold(arr,sr-1,sc+1,dp);
         int right=maxGold(arr,sr,sc+1,dp);
